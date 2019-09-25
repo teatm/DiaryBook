@@ -1,12 +1,12 @@
 ﻿using DiaryBook.Contracts.Repositories;
-using DiaryBook.DataAccess;
 using DiaryBook.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace DiaryBook.Repositories
 {
-    public class DiaryRepository : GenericRepository<Diary>, IDiaryRepository
+    public class DiaryRepository : Repository<Diary>, IDiaryRepository
     {
-        public DiaryRepository(DiaryBookDbContext context) : base(context)
+        public DiaryRepository(DbContext context) : base(context)
         {
         }
 
