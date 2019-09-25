@@ -7,15 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook", "DiaryBook\Diar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.DataAccess", "DiaryBook.DataAccess\DiaryBook.DataAccess.csproj", "{08F49F80-AB13-4986-AA38-2AA11973F6E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryBook.Repositories", "DiaryBook.Repositories\DiaryBook.Repositories.csproj", "{D940E631-920E-4EA7-80F0-65355541FB48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.Repositories", "DiaryBook.Repositories\DiaryBook.Repositories.csproj", "{D940E631-920E-4EA7-80F0-65355541FB48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryBook.Contracts", "DiaryBook.Contracts\DiaryBook.Contracts.csproj", "{342EA3EC-BFE7-4A51-AACE-3E6BD6798EC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.Contracts", "DiaryBook.Contracts\DiaryBook.Contracts.csproj", "{342EA3EC-BFE7-4A51-AACE-3E6BD6798EC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryBook.DTO", "DiaryBook.DTO\DiaryBook.DTO.csproj", "{D182F7A1-B15C-4DF9-B5CD-CFA8B8C5A8D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.DTO", "DiaryBook.DTO\DiaryBook.DTO.csproj", "{D182F7A1-B15C-4DF9-B5CD-CFA8B8C5A8D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryBook.UnitOfWork", "DiaryBook.UnitOfWork\DiaryBook.UnitOfWork.csproj", "{3EC2AB17-FB57-4E6B-8943-DD59FE375848}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.BusinessLogic", "DiaryBook.BusinessLogic\DiaryBook.BusinessLogic.csproj", "{0FF82CF5-9DD6-45EA-AE42-453F6B4C5A15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryBook.BusinessLogic", "DiaryBook.BusinessLogic\DiaryBook.BusinessLogic.csproj", "{0FF82CF5-9DD6-45EA-AE42-453F6B4C5A15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.Services", "DiaryBook.Services\DiaryBook.Services.csproj", "{65C33BFE-9896-4CC4-916E-4AEF719568DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryBook.UnitOfWork", "DiaryBook.UnitOfWork\DiaryBook.UnitOfWork.csproj", "{785ECFA1-7FA7-4D19-B0DD-8C02A9A7B35C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +45,18 @@ Global
 		{D182F7A1-B15C-4DF9-B5CD-CFA8B8C5A8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D182F7A1-B15C-4DF9-B5CD-CFA8B8C5A8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D182F7A1-B15C-4DF9-B5CD-CFA8B8C5A8D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3EC2AB17-FB57-4E6B-8943-DD59FE375848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EC2AB17-FB57-4E6B-8943-DD59FE375848}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EC2AB17-FB57-4E6B-8943-DD59FE375848}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EC2AB17-FB57-4E6B-8943-DD59FE375848}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FF82CF5-9DD6-45EA-AE42-453F6B4C5A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FF82CF5-9DD6-45EA-AE42-453F6B4C5A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF82CF5-9DD6-45EA-AE42-453F6B4C5A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF82CF5-9DD6-45EA-AE42-453F6B4C5A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C33BFE-9896-4CC4-916E-4AEF719568DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C33BFE-9896-4CC4-916E-4AEF719568DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C33BFE-9896-4CC4-916E-4AEF719568DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C33BFE-9896-4CC4-916E-4AEF719568DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785ECFA1-7FA7-4D19-B0DD-8C02A9A7B35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785ECFA1-7FA7-4D19-B0DD-8C02A9A7B35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785ECFA1-7FA7-4D19-B0DD-8C02A9A7B35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785ECFA1-7FA7-4D19-B0DD-8C02A9A7B35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

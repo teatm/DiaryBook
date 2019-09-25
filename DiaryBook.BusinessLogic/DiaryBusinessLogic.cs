@@ -7,16 +7,22 @@ namespace DiaryBook.BusinessLogic
 {
     public class DiaryBusinessLogic : IDiaryBusinessLogic
     {
-        private UnitOfWork.UnitOfWork unitOfWork = new UnitOfWork.UnitOfWork();
+        private IUnitOfWork unitOfWork;
 
-        public DiaryBusinessLogic()
+        public DiaryBusinessLogic(IUnitOfWork unitOfWork)
         {
-
+            this.unitOfWork = unitOfWork;
         }
 
         public IEnumerable<Diary> GetDiaries()
         {
-            return unitOfWork.DiaryRepository.Get();
+            return unitOfWork.Diaries.Get();
+        }
+
+        public void UpdateDiary(Diary diary)
+        {
+            unitOfWork.Diaries.Update(diary);
+            unitOfWork.Save();
         }
     }
 }

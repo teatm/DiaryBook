@@ -1,4 +1,5 @@
-﻿using DiaryBook.Contracts.UnitOfWork;
+﻿using DiaryBook.Contracts.Repositories;
+using DiaryBook.Contracts.UnitOfWork;
 using DiaryBook.DataAccess;
 using DiaryBook.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -8,17 +9,15 @@ namespace DiaryBook.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private DiaryBookDbContext context = new DiaryBookDbContext(new DbContextOptionsBuilder<DiaryBookDbContext>().Options);
-        private DiaryRepository diaryRepository;
+        private readonly DiaryBookDbContext context;
 
-        public DiaryRepository DiaryRepository
+        public UnitOfWork()
         {
-            get
-            {
-                diaryRepository = diaryRepository ?? new DiaryRepository(context);
-                return diaryRepository;
-            }
+            context = new DiaryBookDbContext(new DbContextOptionsBuilder<DiaryBookDbContext>().Options);
+            Diaries = new DiaryRepository(context);
         }
+
+        public IDiaryRepository Diaries { get; }
 
         public void Save()
         {

@@ -1,4 +1,6 @@
-﻿using DiaryBook.DataAccess;
+﻿using DiaryBook.Contracts.Repositories;
+using DiaryBook.Contracts.UnitOfWork;
+using DiaryBook.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,12 +9,12 @@ using System.Linq.Expressions;
 
 namespace DiaryBook.Repositories
 {
-    public class GenericRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
-        internal DiaryBookDbContext context;
+        internal DbContext context;
         internal DbSet<T> dbSet;
 
-        public GenericRepository(DiaryBookDbContext context)
+        public Repository(DbContext context)
         {
             this.context = context;
             this.dbSet = context.Set<T>();

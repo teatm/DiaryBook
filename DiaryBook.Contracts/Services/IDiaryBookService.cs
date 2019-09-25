@@ -1,9 +1,9 @@
 ﻿using DiaryBook.DTO;
 using System.Collections.Generic;
 
-namespace DiaryBook.Contracts.BusinessLogic
+namespace DiaryBook.Contracts.Services
 {
-    public interface IDiaryBusinessLogic
+    public interface IDiaryBookService
     {
         IEnumerable<Diary> GetDiaries();
 

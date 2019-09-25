@@ -7,6 +7,9 @@
 
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="Autofac.Mvc5" Version="4.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
@@ -20,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DiaryBook.BusinessLogic\DiaryBook.BusinessLogic.csproj" />
     <ProjectReference Include="..\DiaryBook.DataAccess\DiaryBook.DataAccess.csproj" />
+    <ProjectReference Include="..\DiaryBook.Services\DiaryBook.Services.csproj" />
   </ItemGroup>
 
 </Project>
